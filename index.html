@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario con PHP</title>
+  </head>
+  <body>
+    <form
+      class="formulario"
+      id="formulario"
+      action="lexmonteverde@gmail.com"
+      method="POST"
+    >
+      <div class="form-row">
+        <div class="col">
+          <input
+            type="text"
+            name="nombre"
+            class="form-control formulario-focus"
+            placeholder="Nombre"
+            id="nombre"
+          />
+        </div>
+        <div class="col">
+          <input
+            type="text"
+            name="apellido"
+            class="form-control formulario-focus"
+            placeholder="Apellido"
+            id="apellido"
+          />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email"></label>
+        <input
+          type="email"
+          name="email"
+          class="form-control formulario-focus"
+          id="email"
+          placeholder="E-mail"
+        />
+        <span id="erMail"></span>
+      </div>
+      <div class="form-group">
+        <label for="comentarios"></label>
+        <textarea
+          class="form-control formulario-focus"
+          name="message"
+          id="comentarios"
+          rows="8"
+          placeholder="Dejanos tu consulta"
+        ></textarea>
+      </div>
+      <button
+        type="submit"
+        class="btn btn-primary btn-block boton mb-3"
+        data-toggle="modal"
+        data-target="#exampleModal"
+        id="enviar-btn"
+      >
+        Enviar
+      </button>
+      <span id="error"></span>
+      <div
+        id="status"
+        class="text-center d-flex flex-row justify-content-center"
+      ></div>
+    </form>
+  </body>
+</html>
